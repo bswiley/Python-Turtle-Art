@@ -99,8 +99,6 @@ for s in range (STEPS):
 screen.update() # Ensure all drawing is rendered
 canvas = screen.getcanvas()
 
-# Calculate coordinates relative to the center origin (0,0)
-# Tkinter postscript uses top-left origin, so x=-W/2, y=-H/2
 canvas.postscript(
     file="art.eps",
     x=-W/2,
